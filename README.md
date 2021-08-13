@@ -8,6 +8,7 @@ Code: to reproduce the analyses in the paper,
 
 - run *occupancy-analysis.R* to fit the main occupancy models (these are also saved in the `\output` folder), do model selection, and plot covariate effects
 - run *occupancy-goodness-of-fit.R* to calculate the c-hat statistic giving an indication of model fit for the best model
+- run *comparing-maps.R* to compare the occupancy results with similar metrics generated using a presence-only analysis (using MaxEnt) or an expert map generated through qualitative discussion (reproduces Figure 3 in the paper).
 
 Code in *occupancy-data-preproc.R* is not needed but included for completeness. It converts the csv files in `data\csv`, which contain various input datasets used by the occupancy model, into a single .Rdata file (`data\Mongolia_occupancy_inputs.Rdata`), which is then used by the scripts above. Some minimal pre-processing (excluding ununsed variables, renaming for consistency, etc) is performed. 
 
