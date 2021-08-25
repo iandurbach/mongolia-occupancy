@@ -2,7 +2,13 @@
 
 Data and code used for an country-wide occupancy survey of snow leopards in Mongolia, accompanying the paper below. 
 
-Data: `data\Mongolia_occupancy_inputs.Rdata` contains the results of a survey of 1017 20x20km sampling units, out of a total of 1200 sampling units identified as potential snow leopard habitat (183 could not be sampled for various reasons). This represents a near complete survey of potential snow leopard habitat in Mongolia, nearly 500,000 square kilometers. Please see the paper for more detail on data collection.
+Data: `data\Mongolia_occupancy_inputs.Rdata` contains the results of a survey of 1017 20x20km sampling units, out of a total of 1200 sampling units identified as potential snow leopard habitat (183 could not be sampled for various reasons). This represents a near complete survey of potential snow leopard habitat in Mongolia, nearly 500,000 square kilometers. Please see the paper for more detail on data collection. The following objects are contained in the file:
+
+- Pres: presence/absence occupancy survey results, used for model fitting
+- Site_Cov: unit-specific covariates, used for model fitting
+- SurvCov: survey-specific covariates, used for model fitting
+- Mongolia_studyarea: covariates for whole survey area, used for prediction
+- Mongolia_fullrange: covariates across whole expected snow leopard range, used for prediction
 
 Code: to reproduce the analyses in the paper, 
 
